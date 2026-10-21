@@ -457,8 +457,8 @@ function afficherAgents() {
             ? "Aucun agent enregistré pour le moment."
             : "Aucun agent ne correspond à la recherche.";
         actualiserTableau();
+        actualiserListeAgentsPointage();
         return;
-      actualiserListeAgentsPointage();
     }
 
     liste.innerHTML = resultat.map(a => `
